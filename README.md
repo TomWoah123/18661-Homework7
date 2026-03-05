@@ -12,7 +12,7 @@
 
 ## PCA
 The script `pca.py` produces the eigenfaces from the `face_data.mat` file using Principal Component Analysis. The data matrix gets zero-centered to calculate the co-variance matrix $C_x = \frac{1}{n} X^T X$. The eigenvectors and their
-corresponding eigenvalues of the co-variance matrix get sorted based on their eigenvalue. The top $k$ eigenvectors are the principal components used for dimensionality reduction.
+corresponding eigenvalues of the co-variance matrix get sorted based on their eigenvalue. The top $k$ eigenvectors are the principal components used for dimensionality reduction. When we reshape the eigenvectors into $28 \times 28$ matrices, we can visualize the "eigenfaces" that we can use to reproduce the data with less dimensions.
 
 ## Reinforcement Learning
 The script `VI_SARSA.py` simulates an agent traversing through a Frozen Lake environment. The agent learns an optimal policy using value iteration, policy iteration, Q-learning, and SARSA algorithms.
